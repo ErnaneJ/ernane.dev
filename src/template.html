@@ -1,16 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<meta name="theme-color" content="#333333">
 
 	%sapper.base%
 
-	<link rel="stylesheet" href="global.css">
-	<link rel="manifest" href="manifest.json" crossorigin="use-credentials">
-	<link rel="icon" type="image/png" href="favicon.png">
-	<link rel="apple-touch-icon" href="logo-192.png">
+	<link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="icon" href="assets/icon.ico" type="image/x-icon"/>
+	<link rel="canonical" href = "https://ernanedev.netlify.app/" />
+	<link href=/feed.xml rel=alternate type=application/rss+xml title="RSS Feed for Ernane.dev's Blog">
+	
+	<title>Ernane.dev | Desenvolvedor de Software</title>
+	
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Técnico eletrônico amante da tecnologia e entusiasta do desenvolvimento de software.">
+	<meta name="keyword" content="portfolio, javascript, developer, software, studant">
+
+	<meta property="og:title" content="Ernane.dev | Desenvolvedor de Software"/>
+	<meta property="og:description" content="Técnico eletrônico amante da tecnologia e entusiasta do desenvolvimento de software." />
+	<meta property="og:image" content="https://ernanedev.netlify.app/assets/icon.ico"/>
+	<meta property="og:url" content="https://ernanedev.netlify.app/" />
+	<meta property="og:type" content="website" />
 
 	<!-- Sapper creates a <script> tag containing `src/client.js`
 	     and anything else it needs to hydrate the app and
@@ -30,5 +42,14 @@
 	<!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
 	<div id="sapper">%sapper.html%</div>
+
+	<script async>
+		const themeButton = document.getElementById('theme-button');
+		const darkTheme = 'dark-theme';
+		const iconTheme = 'fa-sun';
+		const selectedTheme = localStorage.getItem('selected-theme');
+		const selectedIcon = localStorage.getItem('selected-icon');
+		if (selectedTheme) { document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);themeButton.classList[selectedIcon === 'fa-moon' ? 'add' : 'remove'](iconTheme); }
+	</script>
 </body>
 </html>
