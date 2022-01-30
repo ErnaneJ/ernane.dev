@@ -18,7 +18,7 @@
   <Skills/>
   <Qualifications/>
   <!-- <Services/> -->
-  <!-- <Portifolio/> -->
+  <Portifolio/>
   <!-- <More/> -->
   <!-- <Testmonial/> -->
   <ContactMe/>

@@ -2,9 +2,9 @@
   import { onMount } from 'svelte';
   import Project from './components/Project.svelte';
 
-  let Carousel;
+  let Carousel, carousel;
   onMount(async () => {
-    Carousel = (await import('@beyonk/svelte-carousel')).default;
+    Carousel = (await import('svelte-carousel')).default;
   })
 
   const projects = [
@@ -20,7 +20,7 @@
 
   <div class="portfolio__container container">
     {#if Carousel}
-      <svelte:component this={Carousel} perPage={1} loop={true} dots={false} >
+      <svelte:component this={Carousel} bind:this={carousel} perPage={1} loop={true} dots={false} >
         <span class="control" slot="left-control">
           <i class="fas fa-angle-left swiper-portfolio-icon"></i>
         </span>
