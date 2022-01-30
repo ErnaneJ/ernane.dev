@@ -3,7 +3,7 @@
 
 	const footerLinks = [ 
 		{name: 'Site', icon: 'fas fa-home', path: `/`},
-		{name: 'Blog', icon: 'fas fa-blog', path: `/blog`},
+		 // {name: 'Blog', icon: 'fas fa-blog', path: `/blog`}, breve
 		{name: 'Sobre', icon: 'fas fa-user', path: `/#sobre`}
 	];
 	const socialLinks = [

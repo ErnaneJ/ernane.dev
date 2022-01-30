@@ -21,7 +21,7 @@
 		{name: 'Skills', icon: 'fas fa-file-code', path: `/#${normalizeString('Skills')}`},
 		{name: 'Portfólio', icon: 'fas fa-images', path: `/#${normalizeString('Portfólio')}`}, 
 		{name: 'Contato', icon: 'far fa-paper-plane', path: `/#${normalizeString('Contato')}`},
-		{name: 'Blog', path:'/blog', icon: 'fas fa-blog'}
+		// {name: 'Blog', path:'/blog', icon: 'fas fa-blog'} em breve
 	]
 </script>
 <svelte:window bind:scrollY={scrollY} on:scroll={handleScroll}/>
