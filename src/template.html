@@ -8,40 +8,44 @@
 
 	<link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="icon" href="assets/icon.ico" type="image/x-icon"/>
-	<link rel="canonical" href = "https://ernanedev.netlify.app/" />
-	<link href=/feed.xml rel=alternate type=application/rss+xml title="RSS Feed for Ernane.dev's Blog">
+	<link rel="canonical" href = "https://ernane.dev/" />
+	<link href=/feed.xml rel=alternate type=application/rss+xml title="Blog Ernane.dev">
 	
 	<title>Ernane.dev | Desenvolvedor de Software</title>
 	
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="Técnico eletrônico amante da tecnologia e entusiasta do desenvolvimento de software.">
-	<meta name="keyword" content="portfolio, javascript, developer, software, studant">
+	<meta name="keyword" content="Portfólio">
+	<meta name="keyword" content="Javascript">
+	<meta name="keyword" content="Developer">
+	<meta name="keyword" content="Software">
+	<meta name="keyword" content="Studant">
 
 	<meta property="og:title" content="Ernane.dev | Desenvolvedor de Software"/>
 	<meta property="og:description" content="Técnico eletrônico amante da tecnologia e entusiasta do desenvolvimento de software." />
-	<meta property="og:image" content="https://ernanedev.netlify.app/assets/icon.ico"/>
-	<meta property="og:url" content="https://ernanedev.netlify.app/" />
-	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://ernane.dev/assets/icon.ico"/>
+	<meta property="og:url" content="https://ernane.dev/"/>
+	<meta property="og:type" content="website"/>
 
-	<!-- Sapper creates a <script> tag containing `src/client.js`
-	     and anything else it needs to hydrate the app and
-	     initialise the router -->
+	<meta property="article:publisher" content="https://github.com/ErnaneJ"/>
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:title" content="Ernane.dev | Desenvolvedor de Software"/>
+	<meta name="twitter:description" content="Técnico eletrônico amante da tecnologia e entusiasta do desenvolvimento de software."/>
+	<meta name="twitter:url" content="https://ernane.dev/"/>
+	<meta name="twitter:image" content="https://ernane.dev/assets/icon.ico"/>
+	<meta name="twitter:label1" content="Written by"/>
+	<meta name="twitter:data1" content="Ernane Ferreira"/>
+	<meta name="twitter:label2" content="Filed under"/>
+	<meta name="twitter:data2" content="Portfólio, Javascript, Developer, Software, Studant"/>
+	<meta name="twitter:site" content="@Ernanefe"/>
 	%sapper.scripts%
-
-	<!-- Sapper generates a <style> tag containing critical CSS
-	     for the current page. CSS for the rest of the app is
-	     lazily loaded when it precaches secondary pages -->
 	%sapper.styles%
-
-	<!-- This contains the contents of the <svelte:head> component, if
-	     the current page has one -->
 	%sapper.head%
 </head>
-<body>
-	<!-- The application will be rendered inside this element,
-	     because `src/client.js` references it -->
-	<div id="sapper">%sapper.html%</div>
+<body  id="sapper">
+	
+	%sapper.html%
 
 	<script async>
 		const themeButton = document.getElementById('theme-button');

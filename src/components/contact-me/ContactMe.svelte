@@ -37,7 +37,7 @@
   <div class="contact__container container grid">
     <div>
       <div class="contact__information">
-        <i class="fas fa-phone-alt contact__icon"></i>
+        <i class="fas fa-phone contact__icon"></i>
 
         <div>
           <h3 class="contact__title">Telefone</h3>
@@ -115,6 +115,8 @@
 .contact__information{
 	display: flex;
 	margin-bottom: var(--mb-2);
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .contact__icon{
   font-size: 1.5rem;
@@ -125,6 +127,7 @@
 .contact__title{
 	font-size: var(--h3-font-size);
 	font-weight: var(--font-medium);
+  margin: 0;
 }
 
 .contact__subtitle{

@@ -5,7 +5,9 @@
   let Carousel, carousel;
   onMount(async () => {
     Carousel = (await import('svelte-carousel')).default;
-  })
+  });
+  const nextPost = () => carousel.goToNext();
+  const prevPost = () => carousel.goToPrev();
 
   const projects = [
     {title: 'Renan & Joyce', description: 'Site de casamento completo com API de presentes implementado com svelte e Ruby - sinatra. Contando com toda a delicadesa e amor do casal.', linkDemo: 'https://www.renanejoyce.com.br/', image: '/assets/renanejoyce.webp'},
@@ -20,22 +22,33 @@
 
   <div class="portfolio__container container">
     {#if Carousel}
-      <svelte:component this={Carousel} bind:this={carousel} perPage={1} loop={true} dots={false} >
-        <span class="control" slot="left-control">
-          <i class="fas fa-angle-left swiper-portfolio-icon"></i>
-        </span>
+      <svelte:component this={Carousel} bind:this={carousel} perPage={1} infinite={true} dots={false} arrows={false} >
         {#each projects as project}
           <Project {project}/>
         {/each}
-        <span class="control" slot="right-control">
-          <i class="fas fa-angle-right swiper-portfolio-icon"></i>
-        </span>
       </svelte:component>
+      <span class="carousel_portfolio controls_prev" on:click={prevPost}>
+        <i class="fas fa-arrow-left"></i>
+      </span>
+      <span class="carousel_portfolio controls_next">
+        <i class="fas fa-arrow-right" on:click={nextPost}></i>
+      </span>
     {/if}
   </div>
 </section>
 
 <style>
+.carousel_portfolio{
+  position: absolute;
+  top: 40%;
+  margin: 0 .5rem;
+}
+.carousel_portfolio i{
+  font-size: 26px;
+  color: var(--first-color);
+}
+.controls_prev{ left: 0rem; }
+.controls_next{ right: -.5rem; }
 .portfolio__container{
   position: relative;
   overflow: hidden;

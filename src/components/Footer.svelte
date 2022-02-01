@@ -3,20 +3,21 @@
 
 	const footerLinks = [ 
 		{name: 'Site', icon: 'fas fa-home', path: `/`},
-		 // {name: 'Blog', icon: 'fas fa-blog', path: `/blog`}, breve
-		{name: 'Sobre', icon: 'fas fa-user', path: `/#sobre`}
+		{name: 'Sobre', icon: 'fas fa-user', path: `/#sobre`},
+		{name: 'Blog', icon: 'fas fa-blog', path: `https://blog.ernane.dev`}
 	];
 	const socialLinks = [
     {name: 'github', class: "github", link: 'https://github.com/ErnaneJ'},
 		{name: 'Instagram', class: "instagram", link: 'https://www.instagram.com/ernane.jx/'},
-		{name: 'Telegram', class: "telegram", link: 'https://t.me/ErnaneJR'}
+		{name: 'Telegram', class: "telegram", link: 'https://t.me/ErnaneJR'},
+		{name: 'Feed RSS', class: " fas fa-rss", link: 'http://feeds.feedburner.com/BlogErananedev'}
   ]
 </script>
 <footer class="footer" in:fade={{delay: 1000, duration: 1000}}>
 	<div class="footer__bg">
 		<div class="footer__container container grid">
 			<div class="footer__logo">
-				<h1 class="footer__title">Ernane.dev</h1>
+				<h1 class="footer__title"><a href="/" style="color: white !important">Ernane.dev</a></h1>
 				<span class="footer__subtitle">Desenvolvedor de Software</span>
 			</div>
 
@@ -29,13 +30,13 @@
 			</ul>
 			<div class="footer__socials">
 				{#each socialLinks as link}
-					<a href="{link.link}" title="{link.name}" class="footer__social" target="_blank" rel="noreferrer">
+					<a href="{link.link}" title="{link.name}" class="footer__social" target="_blank" rel="noopener">
 						<i class="fab fa-{link.class}"></i>
 					</a>
 				{/each}
 			</div>
 		</div>
-		<p class="footer__copy">&#169; 2021 - 2021 Ernane.dev</p>
+		<p class="footer__copy">&#169; 2021 - {(new Date()).getFullYear()} Ernane.dev</p>
 	</div>
 </footer>
 <style>
