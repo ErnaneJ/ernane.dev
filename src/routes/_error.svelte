@@ -75,7 +75,7 @@
 	.message-box {
 		height:100%;
 		width: 100%;
-		color: #FFF;
+		color: var(--text-color);
 	}
 
 #Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
@@ -106,7 +106,7 @@
 	.message-box{
 		height: 100%;
 		width: 100%;
-		color: #FFF;
+		color: var(--text-color);
 		z-index: 9;
 	}
 	svg{
