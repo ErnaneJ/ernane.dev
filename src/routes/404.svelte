@@ -1,12 +1,6 @@
-<script>
-	export let status;
-	export let error;
-
-	if(error.stack) console.error(error.stack);
-</script>
-
 <svelte:head>
-	<title>{status} - rnane.dev</title>
+	<title>404 - Ernane.dev</title>
+  <meta name="robots" content="noindex">
 </svelte:head>
 
 <section class="section">
@@ -21,9 +15,8 @@
 			</g>
 		</svg>
 		<div class="message-box">
-			<h1 class="section__title">{status}!</h1>
+			<h1 class="section__title">404!</h1>
 			<p class="section__subtitle">
-				<span class="msg__error">{error.message}</span>
 				<span>A página que você procura pode ter sido removida, teve o seu nome alterado ou está temporáriamente indisponível.</span>
 				<span>Por favor, tente ir para a página anterior ou voltar para o início.</span>
 			</p>
@@ -36,7 +29,7 @@
 					<p onclick="window.location = '/'" class="button button__flex">
 						<i class="fas fa-home svelte-xo3g9u"></i>
 						Página inicial 
-					</p>
+          </p>
 				</div>
 			</div>
 		</div>
@@ -59,9 +52,6 @@
 	.section__subtitle span{
 		display: inline-block;
 		margin-bottom: .75rem;
-	}
-	.msg__error{
-		color: rgb(216, 85, 85);
 	}
 	.content-error{
 		position: relative;
