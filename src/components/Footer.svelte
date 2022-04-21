@@ -18,7 +18,7 @@
 		<div class="footer__container container grid">
 			<div class="footer__logo">
 				<a href="/" class="footer__logo">
-					<img src="/logo.png" alt="logo ernane dev"/>
+					<img src="/assets/logo.png" alt="logo ernane dev"/>
 				</a>
 			</div>
 
