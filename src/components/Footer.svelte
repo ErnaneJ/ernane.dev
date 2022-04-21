@@ -17,8 +17,9 @@
 	<div class="footer__bg">
 		<div class="footer__container container grid">
 			<div class="footer__logo">
-				<h1 class="footer__title"><a href="/" style="color: white !important">Ernane.dev</a></h1>
-				<span class="footer__subtitle">Desenvolvedor de Software</span>
+				<a href="/" class="footer__logo">
+					<img src="/logo.png" alt="logo ernane dev"/>
+				</a>
 			</div>
 
 			<ul class="footer__links">
@@ -88,6 +89,9 @@
 .footer__link,
 .footer__social{
 	color: #fff;
+}
+.footer__logo img{
+	max-height: 70px;
 }
 
 @media screen and (min-width: 768px) {
