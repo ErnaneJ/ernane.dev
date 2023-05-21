@@ -1,33 +1,35 @@
 <h1 align="center">
-  <strong>Ernane.dev</strong>
+  <strong>Ernane.dev (old)</strong>
 </h1>
 
 <p align="center">
-  <a href="#-Tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-Projeto">Projeto</a>&nbsp;&nbsp;&nbsp;
+  <a href="#-Tecnologias">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Projeto">Project</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 <br/>
 
 <p align="center">
   <p align="center">
-  <img alt="Banner site Ernane.dev" src="./.github/banner.png" width="100%">
+  <img alt="preview for Ernane.dev" src="./.github/banner.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
 
-Esta API foi desenvolvida com:
+This site was developed with:
 - Javascript
 - Svelte
   
-Verifique a lista completa <a href="./package.json">aqui</a>.
+Check the complete list <a href="./package.json">here</a>.
 
 ## 💻 Projeto
 
-Este site consiste em um portfólio e facilitador de contato para aquele que desejar. O mesmo conta com breves descrições sobre a minha carreira profissional e educacional bem como, parcialmente, quem é o Ernane por trás dos códigos.
+Old site with some pertinent information and a brief portfolio of projects that make up my professional and academic career building.
+
+<a href="https://github.com/ErnaneJ/ernane-dev"> New Website. </a> 
 
 <hr/>
 
 <p align="center">
-  Desenvolvido com ❤ por <a target="_blank" href="https://ernanej.github.io/my-linktree/">Ernane Ferreira</a>. 👋🏻<br/>
+  Developed with ❤ by <a target="_blank" href="https://www.ernane.dev/">Ernane Ferreira</a>. 👋🏻<br/>
 </p>
